@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Corps de la page */
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: rgb(200, 180, 0);
+}
+
+/* Élémént primordiale */
+:root {
+  --primary-color: rgb(100, 0, 200);
+  --secondary-color: rgb(140, 0, 200);
+  --accent-color: rgb(180, 180, 255);
+  --shadow-color: rgb(0, 120, 255);
+}
+
+/* Boutons de classe "primary" */
+button.primary {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid transparent;
+  background: var(--primary-color);
+  color: rgb(200, 200, 200);
+  border-radius: 8px;
+}
+
+/* Logo */
+img{
+  /* Dimensions */
+  width: 100px;
+}

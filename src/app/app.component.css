@@ -1,0 +1,31 @@
+:host {
+  --content-padding: 10px;
+}
+
+/* Header et section content */
+header, .content{
+  /* Contour */
+  border: 2px solid black;
+
+  /* Position des éléments internes */
+  display: flex;
+  justify-content: center;
+}
+
+/* Header */
+header {
+  /* Dimensions */
+  height: 60px;
+
+  display: block;
+
+  /* Espace interne et externe */
+  padding: var(--content-padding);
+  margin-bottom: 10px;
+}
+
+/* section content */
+.content {
+  /* Espace interne */
+  padding: var(--content-padding);
+}

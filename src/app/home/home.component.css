@@ -1,0 +1,51 @@
+/* --- PROPRIÉTÉS COMMUNES --- */
+
+/* Résultats de la recherche */
+.results {
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+
+  /* Champ de saisie de type texte */
+  input[type="text"] {
+    /* Dimensions */
+    width: 45%;
+
+    /* Contour et fond */
+    border: solid 2px var(--primary-color);
+    border-radius: 8px;
+    background-color: var(--accent-color);
+
+    /* Espace interne et externe */
+    padding: 10px;
+    margin-right: 10px;
+
+    display: inline-block;
+  }
+
+  /* Valeur exemple des champs de saisie */
+  input::placeholder{
+    /* Couleur */
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  /* --- RESPONSIVE --- */
+
+  @media (min-width: 500px) and (max-width: 768px) {
+    .results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    input[type="text"] {
+        width: 70%;
+    }   
+  }
+
+  @media (max-width: 499px) {
+    .results {
+        grid-template-columns: 1fr;
+    }    
+  }
